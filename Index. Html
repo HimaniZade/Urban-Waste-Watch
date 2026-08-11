@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Waste Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Urban Waste Watch</h1>
+    <p>Smart Waste Management System</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#report">Report Waste</a>
+    <a href="#about">About</a>
+</nav>
+
+<section id="home" class="hero">
+    <h2>Keep Our City Clean</h2>
+    <p>Report overflowing dustbins and missed waste collection.</p>
+    <button onclick="showMessage()">Report a Problem</button>
+</section>
+
+<section id="report">
+    <h2>Report Waste Issue</h2>
+
+    <form onsubmit="submitReport(event)">
+        <label>Your Name</label>
+        <input type="text" id="name" required>
+
+        <label>Issue</label>
+        <select id="issue" required>
+            <option value="">Select Issue</option>
+            <option>Overflowing Dustbin</option>
+            <option>Missed Waste Collection</option>
+        </select>
+
+        <label>Location</label>
+        <input type="text" id="location" placeholder="Enter location" required>
+
+        <label>Upload Image</label>
+        <input type="file" accept="image/*">
+
+        <button type="submit">Submit Report</button>
+    </form>
+
+    <p id="result"></p>
+</section>
+
+<section id="about">
+    <h2>About the Project</h2>
+    <p>
+        Urban Waste Watch is a citizen-centric smart waste management
+        project that helps citizens report waste-related problems.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Urban Waste Watch</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
